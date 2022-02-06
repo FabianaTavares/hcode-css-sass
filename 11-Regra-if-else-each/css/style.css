@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #7f808c;
+}
+
+#chat {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 0;
+  list-style: none;
+}
+#chat li {
+  display: flex;
+  margin-bottom: 32px;
+}
+#chat li .avatar {
+  padding: 0 16px;
+  display: flex;
+  align-items: flex-end;
+}
+#chat li .avatar img {
+  border-radius: 50%;
+  width: 48px;
+}
+#chat li .message {
+  flex: 1;
+  background-color: #0c95ff;
+  padding: 16px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+}
+#chat li .message strong {
+  color: #242939;
+}
+#chat li .message p {
+  font-size: 14px;
+}
+#chat li .message time {
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: 0.65;
+}
+#chat li .menu {
+  display: flex;
+  align-items: center;
+}
+#chat li .menu button {
+  border: none;
+  background: none;
+  outline: none;
+}
+#chat li .menu button img {
+  width: 16px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+#chat li.me {
+  flex-direction: row-reverse;
+  color: #fff;
+}
+#chat li.me .message {
+  background-color: #00af9c;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0px;
+}
+#chat li.me .message ::selection {
+  background: #fff;
+  color: #00af9c;
+}
+#chat li.me strong {
+  display: none;
+}
+
+.error, .error--serious {
+  background-color: #ffa6a6;
+  border: 1px solid #f00;
+  margin: 10px;
+  padding: 10px;
+}
+.error--serious {
+  border-width: 3px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .field {
+  color: red;
+}
+.wrapper input.field {
+  padding: 10px;
+  border: 2px solid #999;
+  margin: 10px;
+}
+
+.wrapper select.field {
+  padding: 10px;
+  border: 2px solid #999;
+  margin: 10px;
+}
+
+.photo {
+  width: 150px;
+  height: 150px;
+  border: red 2px solid;
+}
+
+.xs {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.sm {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.md {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
